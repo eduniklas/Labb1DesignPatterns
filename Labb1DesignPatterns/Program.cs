@@ -6,8 +6,11 @@ namespace Labb1DesignPatterns
     {
         static void Main(string[] args)
         {
-            Application.Instance();
-            Application.Instance();
+            
+            if (Application.Instance() == null)
+            {
+                Application.Instance();
+            }
         }
     }
 }
